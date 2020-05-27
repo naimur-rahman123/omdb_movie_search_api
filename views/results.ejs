@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+
+<body>
+
+    <h1>Top Search Results</h1>
+
+    <ul>
+        <% data['Search'].forEach(movie => { %>
+        <li> <%= movie['Title'] %> &nbsp;&nbsp;&nbsp; =>>> &nbsp;&nbsp;&nbsp; <em><%= movie['Year'] %></em> </li>
+        <% }) %>
+    </ul>
+
+    <a href="/">Search Again???</a>
+
+
+</body>
+
+</html>
